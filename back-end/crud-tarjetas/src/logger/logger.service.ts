@@ -1,6 +1,6 @@
 import { Injectable, LoggerService } from '@nestjs/common';
 import {createLogger, format, transports} from 'winston';
-import * as fs from 'fs'
+import * as fs from 'fs';
 @Injectable()
 export class AppLogger implements LoggerService {
     private readonly logger;

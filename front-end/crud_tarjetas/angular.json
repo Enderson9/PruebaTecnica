@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "curd_tarjetas": {
+    "crud_tarjetas": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/curd_tarjetas",
+            "outputPath": "dist/crud_tarjetas",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -59,10 +59,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "curd_tarjetas:build:production"
+              "buildTarget": "crud_tarjetas:build:production"
             },
             "development": {
-              "buildTarget": "curd_tarjetas:build:development"
+              "buildTarget": "crud_tarjetas:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -92,5 +92,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "58537b83-4538-468a-b84b-3b743fa83b4a"
   }
 }
