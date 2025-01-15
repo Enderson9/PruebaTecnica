@@ -1,0 +1,20 @@
+1. La base de datos fue creada utilizando MySQL Workcbench 8.0 CE.
+
+2. Para la conexión entre NestJS y MySQL, se empleó
+   el paquete de mysql2. configurando un pool con
+   parámetros básicos como:host, usuario,puerto,
+   contraseña y el nombre de la base de datos.
+
+3. En el caso de Swagger, se implementaron los paquetes
+   nestjs/swagger y swagger-ui-express, configurándolo
+   en el archivo main.ts. Para la documentación, se 
+   utilizaron decoradores como: @ApiOperation(), @ApiBody()
+   en los controladores, y @ApiProperty() en los DTOs.
+
+4. Se utilizó un interceptor básico para medir y visualizar 
+   la velocidad de las operaciones realizadas.
+
+5. Para la creación de logs, se utilizó el paquete Winston,
+   configurado para almacenar los registros en formato JSON.
+
+6. Para consumir la API se utilizó Angular 19.
