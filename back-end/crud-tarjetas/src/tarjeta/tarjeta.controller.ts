@@ -10,7 +10,7 @@ export class TarjetaController{
     constructor(private tarjetaService: TarjetaService){}
 
     @Get('listar')
-    @ApiOperation({summary: 'Permite obtener todos los registros ingresados en la base de datos'})
+    @ApiOperation({summary: 'Permite obtener todos los registros ingresados'})
     async Listar(){
         return await this.tarjetaService.listar();
     }
